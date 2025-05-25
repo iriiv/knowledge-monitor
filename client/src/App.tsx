@@ -5,10 +5,9 @@ import styled from 'styled-components';
 
 import './App.scss';
 import Router from './consts/routes';
-
-import { AuthContext } from './services/Auth';
 import { ReportsProvider } from './services/Reports/Reports';
 import { ThemeContext } from './services/Themes/Theme';
+import { AuthContext } from './services/Auth/Auth';
 
 const Wrapper = styled.div``;
 

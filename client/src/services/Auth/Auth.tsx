@@ -2,8 +2,9 @@ import React, { ReactElement, useEffect } from 'react';
 
 import { useMutation } from 'react-query';
 import { AuthService } from './auth.service';
-import { useLocalStorage } from '../hooks/useLocalStorage';
-import { UsersService } from './users.service';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
+import { UsersService } from '../users.service';
+
 
 export const AuthContext = React.createContext<any>({});
 

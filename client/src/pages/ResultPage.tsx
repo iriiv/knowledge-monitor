@@ -7,9 +7,9 @@ import styled from 'styled-components';
 import ReactTaskOne from '../components/tasks/react/ReactTaskOne';
 import { LoadingPage } from './LoadingPage';
 import { useMutation, useQuery } from 'react-query';
-import { EstimatesService } from '../services/estimates.service';
+import { EstimatesService } from '../services/Estimates/estimates.service';
 import { UsersService } from '../services/users.service';
-import { AuthContext } from '../services/Auth';
+import { AuthContext } from '../services/Auth/Auth';
 
 const FileUploaderWrapper = styled.div`
 	padding: 1em 0;

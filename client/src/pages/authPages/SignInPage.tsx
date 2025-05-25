@@ -10,7 +10,7 @@ import { useContext, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useAuth } from '../../hooks/useAuth';
-import { AuthContext } from '../../services/Auth';
+import { AuthContext } from '../../services/Auth/Auth';
 
 const ToastWrapper = styled.div`
 	position: absolute;

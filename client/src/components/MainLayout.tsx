@@ -22,7 +22,7 @@ import { useAuth } from '../hooks/useAuth';
 import { LoadingPage } from '../pages/LoadingPage';
 import { ThemeContext } from '../services/Themes/Theme';
 import { useUsers } from '../hooks/useUsers';
-import { AuthContext } from '../services/Auth';
+import { AuthContext } from '../services/Auth/Auth';
 
 const BodyWrapper = styled.div`
 	min-height: 100vh;

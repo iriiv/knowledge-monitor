@@ -2,11 +2,11 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.scss';
-import { AuthProvider } from './services/Auth';
 import { ThemeProvider } from './services/Themes/Theme';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import axios from 'axios';
+import { AuthProvider } from './services/Auth/Auth';
 
 const queryClient = new QueryClient({});
 axios.defaults.baseURL = 'http://127.0.0.1:8090/api/';
