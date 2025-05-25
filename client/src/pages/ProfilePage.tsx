@@ -1,6 +1,6 @@
 import { useContext, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
-import { AuthContext } from '../services/Auth';
+import { AuthContext } from '../services/Auth/Auth';
 import { Edit } from '@carbon/icons-react';
 import { Button, Tag, TextInput } from '@carbon/react';
 
@@ -11,7 +11,7 @@ import { useModal } from '../hooks/useModal';
 import { LoadingPage } from './LoadingPage';
 import Table from '../components/Table';
 import { useQuery } from 'react-query';
-import { EstimatesService } from '../services/estimates.service';
+import { EstimatesService } from '../services/Estimates/estimates.service';
 import _ from 'lodash';
 
 const Wrapper = styled.div``;

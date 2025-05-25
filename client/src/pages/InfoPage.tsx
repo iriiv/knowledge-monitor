@@ -6,10 +6,10 @@ import { LoadingPage } from './LoadingPage';
 import '@carbon/charts/styles.css';
 
 import { useMutation, useQuery } from 'react-query';
-import { EstimatesService } from '../services/estimates.service';
+import { EstimatesService } from '../services/Estimates/estimates.service';
 import { GradesService } from '../services/grades.service';
 import { groupBy } from 'lodash';
-import { ThemesService } from '../services/themes.service';
+import { ThemesService } from '../services/Themes/themes.service';
 import { AreaChart, GroupedBarChart } from '@carbon/charts-react';
 import { ThemeContext } from '../services/Themes/Theme';
 import _ from 'lodash';

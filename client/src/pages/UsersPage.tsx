@@ -16,7 +16,7 @@ import { UserInfo } from '../types/UserInfo';
 import { useQuery } from 'react-query';
 import { UsersService } from '../services/users.service';
 import { LoadingPage } from './LoadingPage';
-import { ThemesService } from '../services/themes.service';
+import { ThemesService } from '../services/Themes/themes.service';
 
 const Wrapper = styled.div``;
 

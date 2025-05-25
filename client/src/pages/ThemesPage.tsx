@@ -10,7 +10,7 @@ import { LoadingPage } from './LoadingPage';
 import { usePBThemes } from '../hooks/usePBThemes';
 import { useMutation, useQuery } from 'react-query';
 import { GroupsService } from '../services/groups.service';
-import { ThemesService } from '../services/themes.service';
+import { ThemesService } from '../services/Themes/themes.service';
 
 const Wrapper = styled.div`
 	max-width: 90%;

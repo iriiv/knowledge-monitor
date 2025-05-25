@@ -1,8 +1,8 @@
 import { useNavigate, useParams } from 'react-router';
-import { EstimatesService } from '../services/estimates.service';
+import { EstimatesService } from '../services/Estimates/estimates.service';
 import { useMutation, useQuery } from 'react-query';
 import { useContext, useState } from 'react';
-import { AuthContext } from '../services/Auth';
+import { AuthContext } from '../services/Auth/Auth';
 import { LoadingPage } from './LoadingPage';
 
 import {
@@ -14,6 +14,7 @@ import {
 	IconButton,
 	NumberInput,
 	Modal,
+	TextArea
 } from '@carbon/react';
 
 import styled from 'styled-components';
@@ -70,6 +71,7 @@ const ConfirmPage: React.FC = () => {
 	const { user, refetch } = useContext(AuthContext);
 
 	const [values, setValues] = useState<any[]>([]);
+	const [comment, setComment] = useState<string>("");
 
 	const confirmModal = useModal({
 		onSubmit: async () => {
@@ -244,6 +246,16 @@ const ConfirmPage: React.FC = () => {
 						></Criteria>
 					</>
 				))}
+				<hr />
+				<TextArea
+						value={comment}
+						onChange={(e: any) => setComment(e.target.value)}
+						cols={150}
+						id='comment'
+						labelText='Напишите отзыв'
+						placeholder='Отзыв'
+						rows={4}
+					/>
 				{/* <Table headers={header} rows={data} title='' /> */}
 			</Main>
 			<div>

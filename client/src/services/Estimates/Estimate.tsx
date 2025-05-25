@@ -3,10 +3,10 @@ import { useParams } from 'react-router';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { Topic } from '../../types/Topic';
 import { useMutation, useQuery } from 'react-query';
-import { ThemesService } from '../themes.service';
+import { ThemesService } from '../Themes/themes.service';
 import { EstimatesService } from './estimates.service';
 import { ValuesService } from '../values.service';
-import { AuthContext } from './Auth';
+import { AuthContext } from '../Auth/Auth';
 import { UsersService } from '../users.service';
 
 export const EstimateContext = React.createContext<any>({});

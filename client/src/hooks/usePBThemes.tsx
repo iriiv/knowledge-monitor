@@ -1,5 +1,5 @@
 import { useQuery } from 'react-query';
-import { ThemesService } from '../services/themes.service';
+import { ThemesService } from '../services/Themes/themes.service';
 
 export const usePBThemes = () => {
 	const {

@@ -25,7 +25,7 @@ import { FirebaseDataContext } from '../services/Firebase/FirebaseData';
 import { FirebaseFile, KMFile } from '../types/KMFile';
 import { AddThemeModel, Theme, ThemeDTO } from '../types/Theme';
 import { useMutation, useQuery } from 'react-query';
-import { ThemesService } from '../services/themes.service';
+import { ThemesService } from '../services/Themes/themes.service';
 import Table, { TableWithoutTool } from '../components/Table';
 import { TopicsService } from '../services/topics.service';
 
